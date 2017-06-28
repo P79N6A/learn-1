@@ -1,12 +1,22 @@
 {
-    "name": "dongdage/learn",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "dongdage",
-            "email": "411247654@qq.com"
-        }
-    ],
-    "description":"没事多学!",
-    "require": {}
+  "name": "dongdage/learn",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "dongdage",
+      "email": "411247654@qq.com"
+    }
+  ],
+  "description": "没事多学!",
+  "require": {
+    "dongge/learn": ">=1.0.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "root\\": "root/"
+    },
+    "files": [
+      "root/helper/function.php"
+    ]
+  }
 }

@@ -1,0 +1,54 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "49ca329f2bb37d77d9a06c6977a7a38a",
+    "packages": [
+        {
+            "name": "dongge/learn",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/to-Jane/learn.git",
+                "reference": "13e61b818a23f9f292cff53f10e85f830eb783ca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/to-Jane/learn/13e61b818a23f9f292cff53f10e85f830eb783ca.zip",
+                "reference": "13e61b818a23f9f292cff53f10e85f830eb783ca",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "App\\": "app/learn"
+                },
+                "files": [
+                    "app/helps/function.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "zhouchuandong",
+                    "email": "411247654@qq.com"
+                }
+            ],
+            "description": "learn",
+            "time": "2017-03-31T09:18:01+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
