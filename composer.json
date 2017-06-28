@@ -1,0 +1,11 @@
+{
+    "name": "dongdage/learn",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "dongdage",
+            "email": "411247654@qq.com"
+        }
+    ],
+    "require": {}
+}
