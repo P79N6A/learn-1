@@ -9,7 +9,7 @@
   ],
   "description": "没事多学!",
   "require": {
-    "dongge/learn": ">=1.0.2"
+    "dongge/learn": "^1.0"
   },
   "autoload": {
     "psr-4": {

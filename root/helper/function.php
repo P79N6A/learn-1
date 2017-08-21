@@ -23,3 +23,11 @@ if (!function_exists('bubblingSort')) {
         return $array;
     }
 }
+
+
+if (!function_exists('runtime')) {
+    function runtime():\root\helper\Runtime
+    {
+        return \root\helper\Runtime::getInstance();
+    }
+}

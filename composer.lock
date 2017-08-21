@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "49ca329f2bb37d77d9a06c6977a7a38a",
+    "content-hash": "0f12c2e06cde20d523c138800e14c836",
     "packages": [
         {
             "name": "dongge/learn",
