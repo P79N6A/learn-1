@@ -141,11 +141,15 @@ function getDataValues($paramTime)
     return $datestring;*/
 }
 
+/*
+$s = file_get_contents ("http://www.php.net");
+strip_tags ($s, array ('p'));
+echo count ($s);*/
+//var_dump(getDataValues(time() - 7199));
 
-if (empty($_GET['time'])) {
-    $id = 0;
-} else {
-    $id = $_GET['time'];
-}
+/*$client = new \WebSocket\Client('ws://learn.net:8080');
+$client->send('hello web socket!');*/
+$service = new \WebSocket\Server();
+echo $client->receive();
 
-var_dump(getDataValues(time() - 7199));
+

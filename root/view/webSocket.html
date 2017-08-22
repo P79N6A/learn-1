@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<body lang="cn">
+
+</body>
+
+<script>
+    var ws = new WebSocket("ws://learn.net:8080");
+    ws.onopen = function () {
+        alert('握手成功!')
+    };
+    ws.onerror = function () {
+        alert('握手失败!')
+    };
+</script>
+</html>
