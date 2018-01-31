@@ -4,17 +4,17 @@ require 'vendor/autoload.php';
 use root\strategy\mobileShow;
 use root\strategy\computerShow;
 use root\strategy\show;
-
-function exception_handler(Throwable $e)
+ob_implicit_flush();
+/*function exception_handler(Throwable $e)
 {
     if ($e instanceof Error) {
         echo $e->getMessage();
     } else {
         echo $e->getMessage();
     }
-}
+}*/
 
-set_exception_handler('exception_handler');
+//set_exception_handler('exception_handler');
 /*function _exception_handler(Throwable $e)
 {
     if ($e instanceof Error)
@@ -29,12 +29,12 @@ set_exception_handler('exception_handler');
 
 //set_exception_handler('exception_handler');    // 注册异常处理方法来捕获异常
 //set_exception_handler()
-$arr = [];
-/*$sort = bubblingSort($arr);
-print_r($sort);*/
+//$arr = [];
+//$sort = bubblingSort($arr);
+//print_r($sort);
 //$a = new \root\Learn();
 //$a->test;
-$a = 0;
+//$a = 0;
 /*$a = 'computer';
 if ($a == 'mobile') {
     $show = new mobileShow();
@@ -82,13 +82,13 @@ echo "\$a = $a; \$b = $b; \$c = $a";*/
  echo $s+1 . "<br />";*/
 //throw new Exception('this is exception');
 
-function myfunction($v)
+/*function myfunction($v)
 {
     if ($v === "Dog") {
         return "Fido";
     }
     return $v;
-}
+}*/
 
 /*$a = array("Horse", "Dog", "Cat");
 print_r(array_walk($a,function ($v,$k){
@@ -106,7 +106,7 @@ $str = array_walk($arr,function($v) use(&$str){
 echo $str;*/
 
 
-function getDataValues($paramTime)
+/*function getDataValues($paramTime)
 {
 
     $currentTime = time();  //当前时间
@@ -119,27 +119,27 @@ function getDataValues($paramTime)
             $str = floor($subTime / $key) . $val;
             return $key === 1 ? $val : $str;
         }
-    }
-    //return $arrtime;
-    /*if ($arrtime[0] < 7) {
+    }*/
+//return $arrtime;
+/*if ($arrtime[0] < 7) {
 
-        if ($arrtime[0] > 0 && $arrtime[0] < 7) {
-            $datestring = $arrtime[0] . "天前";
-        } elseif ($arrtime[1] > 0) {
-            $datestring = $arrtime[1] . "小时前";
-        } elseif ($arrtime[2] > 0) {
-            $datestring = $arrtime[2] . "分钟前";
-        } else {
-            $datestring = '刚刚';
-            //$datestring=$arrtime[3]."秒前";
-        }
-
+    if ($arrtime[0] > 0 && $arrtime[0] < 7) {
+        $datestring = $arrtime[0] . "天前";
+    } elseif ($arrtime[1] > 0) {
+        $datestring = $arrtime[1] . "小时前";
+    } elseif ($arrtime[2] > 0) {
+        $datestring = $arrtime[2] . "分钟前";
     } else {
-        $datestring = date("m-d H:i", $stime);
+        $datestring = '刚刚';
+        //$datestring=$arrtime[3]."秒前";
     }
 
-    return $datestring;*/
+} else {
+    $datestring = date("m-d H:i", $stime);
 }
+
+return $datestring;*/
+//}
 
 /*
 $s = file_get_contents ("http://www.php.net");
@@ -149,7 +149,30 @@ echo count ($s);*/
 
 /*$client = new \WebSocket\Client('ws://learn.net:8080');
 $client->send('hello web socket!');*/
-$service = new \WebSocket\Server();
-echo $client->receive();
+//$service = new \WebSocket\Server();
+
+//echo $client->receive();
+
+//for ($i = 1; $i <= 300; $i++) print('');
+// 这一句话非常关键，cache的结构使得它的内容只有达到一定的大小才能从浏览器里输出
+// 换言之，如果cache的内容不达到一定的大小，它是不会在程序执行完毕前输出的。经
+// 过测试，我发现这个大小的底限是256个字符长。这意味着cache以后接收的内容都会
+// 源源不断的被发送出去。
+//for ($j = 1; $j <= 20; $j++) {
+//    echo $j .'';
+//flush(); //这一部会使cache新增的内容被挤出去，显示到浏览器上
+//sleep(1); //让程序“睡”一秒钟，会让你把效果看得更清楚
+//}
+//error_reporting(E_ALL ^ E_NOTICE);
+//ob_implicit_flush();
+
+//地址与接口，即创建socket时需要服务器的IP和端口
+//$sk=new \root\WebSocket\Socket('127.0.0.1','8888');
+
+//dd($sk);
+//对创建的socket循环进行监听，处理数据
+//$sk->run();
+
+?>
 
 

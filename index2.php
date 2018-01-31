@@ -1,9 +1,9 @@
-<!doctype html>
+<!--<!doctype html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-    <title>HTML5 websocket 网页聊天室 javascript php</title>
+    <title>东哥聊天室</title>
     <style type="text/css">
         body, p {
             margin: 0px;
@@ -198,15 +198,23 @@
 </div>
 <div class="rin">
     <button id="sd">发送</button>
+    <p><input id="nrong"></p>
 </div>
-<script src="../../root/resource/js/jquery.min.js"></script>
+<script src="./root/resource/js/jquery.min.js"></script>
 <script>
     if (typeof(WebSocket) == 'undefined') {
         alert('你的浏览器不支持 WebSocket ，推荐使用Google Chrome 或者 Mozilla Firefox');
     }
     $(function () {
-        alert()
+        var url = 'ws://127.0.0.1', port = '8888';
+        var ws = new WebSocket(url + ':' + port);
+        $('#ltian').height((document.documentElement.clientHeight - 70)+'px');
+        ws.onopen = function () {
+            if (ws.readyState == 1) {
+                alert('握手成功了!')
+            }
+        }
     })
 </script>
 </body>
-</html>
+</html>-->
