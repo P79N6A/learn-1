@@ -1,0 +1,1 @@
+<?php/** * Created by PhpStorm. * User: donggege * Date: 2019-03-25 * Time: 15:57 */namespace App\Pay;class Demo{    /**     * @var     */    private $payMethod;    public function __construct(Pay $pay)    {        $this->payMethod = $pay;    }    public function transfer()    {        $this->payMethod->transfer();    }}

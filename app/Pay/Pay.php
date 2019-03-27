@@ -1,0 +1,1 @@
+<?php/** * Created by PhpStorm. * User: donggege * Date: 2019-03-25 * Time: 15:51 */namespace App\Pay;abstract class Pay{    /**     * 转账方法     *     * @return mixed     */    abstract function transfer();}

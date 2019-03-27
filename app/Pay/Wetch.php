@@ -1,0 +1,1 @@
+<?php/** * Created by PhpStorm. * User: donggege * Date: 2019-03-25 * Time: 15:55 */namespace App\Pay;class Wetch extends Pay{    public function __construct()    {        echo '微信支付';    }    public function transfer()    {        dd('转账');    }}

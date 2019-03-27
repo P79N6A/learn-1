@@ -8,12 +8,16 @@
     }
   ],
   "description": "没事多学!",
+  "require": {
+    "symfony/var-dumper": "^4.2"
+  },
   "autoload": {
     "psr-4": {
-      "root\\": "root/"
+      "root\\": "root/",
+      "App\\": "app/"
     },
     "files": [
-      "root/helper/function.php"
+      "helper/helpers.php"
     ]
   }
 }
