@@ -16,4 +16,4 @@ $a['dd'] = 0;
 if(isset($a['dd'])){
     dd(1);
 }
-dd('sdf');
+dd('hello jenkins!');
