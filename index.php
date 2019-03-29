@@ -11,9 +11,9 @@ $obj = new \App\Pay\Demo(new \App\Pay\Wetch());
 
 $obj->transfer();
 echo 'sdfasdfsadf';*/
-dd(1);
+
 $a['dd'] = 0;
 if(isset($a['dd'])){
     dd(1);
 }
-dd('jia');
+dd('sdf');
