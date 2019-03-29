@@ -9,7 +9,8 @@
   ],
   "description": "没事多学!",
   "require": {
-    "symfony/var-dumper": "^4.2"
+    "symfony/var-dumper": "^4.2",
+    "predis/predis": "^1.1"
   },
   "autoload": {
     "psr-4": {
