@@ -15,5 +15,9 @@ echo 'sdfasdfsadf';*/
 /*$a['dd'] = 0;
 if(isset($a['dd'])){
     dd(1);
+
+
 }*/
-dd('hello jenkins!!!');
+//dd('hello jenkins!!!');
+
+echo '北京时间：'.\Carbon\Carbon::now();
