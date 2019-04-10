@@ -46,4 +46,4 @@ $end = microtime(true);
 
 echo $end-$t;*/
 
-echo '欧阳陈雪是傻逼';
+echo '欧阳陈雪是我幺儿';
