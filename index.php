@@ -1,9 +1,9 @@
 <?php
-require "vendor/autoload.php";
+//require "vendor/autoload.php";
 
-ini_set("display_errors", "On");
+//ini_set("display_errors", "On");
 
-error_reporting(E_ALL | E_STRICT);
+//error_reporting(E_ALL | E_STRICT);
 /*$a = md5(md5('123456'));
 dd($a);
 dd(md5($a.'gGz9TUd3'));
@@ -20,4 +20,30 @@ if(isset($a['dd'])){
 }*/
 //dd('hello jenkins!!!');
 
-echo '北京时间：'.\Carbon\Carbon::now();
+
+/*$sum = 0;
+srand(microtime(true));
+
+$rand = rand(10,13);
+
+echo $rand;
+
+echo '</br>';
+
+$t = microtime(true);
+
+for ($i = 0; $i<40000+$r;$i++){
+    for ($j=0;$j<=40000;$j++){
+        $sum = $sum+$i+$j;
+    }
+}
+
+echo $sum;
+
+echo '</br>';
+
+$end = microtime(true);
+
+echo $end-$t;*/
+
+echo '欧阳陈雪是傻逼';
