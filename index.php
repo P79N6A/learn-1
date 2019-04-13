@@ -45,5 +45,3 @@ echo '</br>';
 $end = microtime(true);
 
 echo $end-$t;*/
-
-echo '欧阳陈雪是我幺儿';
