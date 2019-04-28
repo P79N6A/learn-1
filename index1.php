@@ -1,9 +1,9 @@
 <?php
-//require "vendor/autoload.php";
+require "vendor/autoload.php";
 
-//ini_set("display_errors", "On");
+ini_set("display_errors", "On");
 
-//error_reporting(E_ALL | E_STRICT);
+error_reporting(E_ALL | E_STRICT);
 /*$a = md5(md5('123456'));
 dd($a);
 dd(md5($a.'gGz9TUd3'));
@@ -44,4 +44,28 @@ echo '</br>';
 
 $end = microtime(true);
 
+
 echo $end-$t;*/
+
+$s = '(){[]}';
+
+function isValid($s)
+{
+    $arr = [];
+
+    for ($i = 0; $i < strlen($s); $i++) {
+        if ($s[$i] == '(') {
+            array_push($arr, ')');
+        } else if ($s[$i] == '{') {
+            array_push($arr, '}');
+        } else if ($s[$i] == '[') {
+            array_push($arr, ']');
+        } else if (empty($arr) || array_pop($arr) != $s[$i]) {
+            return false;
+        }
+    }
+    return empty($arr);
+}
+echo $s;
+dd(isValid($s));
+
