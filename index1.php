@@ -45,7 +45,26 @@ echo '</br>';
 $end = microtime(true);
 
 
+
 echo $end-$t;*/
+
+function removeDuplicates(&$nums) {
+    $count = count($nums);
+    for($i = 0 ; $i <$count -1;$i++){
+        for($s = $i+1 ; $s <$count;$s++){
+            if($nums[$i] == $nums[$s]){
+                unset($nums[$i]);
+                $i ++;
+
+            }
+        }
+    }
+    return $count;
+}
+
+$arr = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
+dd(removeDuplicates($arr));
+die();
 
 $s = '(){[]}';
 
