@@ -48,43 +48,44 @@ $end = microtime(true);
 
 echo $end-$t;*/
 
-function removeDuplicates(&$nums) {
-    $count = count($nums);
-    for($i = 0 ; $i <$count -1;$i++){
-        for($s = $i+1 ; $s <$count;$s++){
-            if($nums[$i] == $nums[$s]){
-                unset($nums[$i]);
-                $i ++;
 
-            }
-        }
-    }
-    return $count;
-}
-
-$arr = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
-dd(removeDuplicates($arr));
-die();
-
-$s = '(){[]}';
-
-function isValid($s)
+/*function fib($n)
 {
-    $arr = [];
-
-    for ($i = 0; $i < strlen($s); $i++) {
-        if ($s[$i] == '(') {
-            array_push($arr, ')');
-        } else if ($s[$i] == '{') {
-            array_push($arr, '}');
-        } else if ($s[$i] == '[') {
-            array_push($arr, ']');
-        } else if (empty($arr) || array_pop($arr) != $s[$i]) {
-            return false;
-        }
+    $result = [0, 1];
+    if ($n < 2) {
+        return $result[$n];
     }
-    return empty($arr);
-}
-echo $s;
-dd(isValid($s));
+    $result = [0, 1];
+    for ($i = 2; $i <= $n; $i++) {
+        $result[] = $result[$i - 2] + $result[$i - 1];
+    }
+    return $result;
+}*/
+
+/*$stack = new \App\DataStructure\Queue();
+
+$stack->enqueue('dongjie1');
+$stack->enqueue('dongjie2');
+$stack->enqueue('dongjie3');
+$stack->enqueue('dongjie4');
+//dd($stack->size());
+
+$stack->dequeue();
+
+$stack->front();
+$stack->enqueue('dongjie5');
+dd($stack->getItems());*/
+
+$doublyLinkedList = new \App\DataStructure\DoublyLinkedList();
+
+$doublyLinkedList->append(1);
+$doublyLinkedList->append(2);
+$doublyLinkedList->append(3);
+$doublyLinkedList->append(4);
+$doublyLinkedList->append(5);
+$doublyLinkedList->append(6);
+
+while ($doublyLinkedList);
+
+
 
