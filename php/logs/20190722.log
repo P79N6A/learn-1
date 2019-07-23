@@ -1,0 +1,308 @@
+2019-07-22 18:47:25 ---- core_lib_version:1.8.14
+2019-07-22 18:47:25 ---- HTTP GET Data:{"route":"User\/init","iActId":"1387","game":"mt4","area":"20951","duplicate":"60130","boss":"6013201","sAmsSerial":"AMS-MT4-0722184725-TMekSS-155589-438231"}
+2019-07-22 18:47:25 ---- HTTP POST Data:[]
+2019-07-22 18:47:25 ---- HTTP COOKIE Data:{"isHostDate":"18099","isOsSysDate":"18099","PTTuserFirstTime":"1563753600000","PTTosSysFirstTime":"1563753600000","pgv_info":"ssid=s1051687360","pgv_pvid":"9464189260","ts_uid":"1884377883","PTTrouteLine":"a20180718btkhy","weekloop":"0-0-0-30","eas_sid":"Y1d5t6Z3e7J842Q4l2d42536m9","ulink_pvid":"kmthPhQJGLtuHiHLWHNdYHZeZmpXMkDHX1ua5l8z5aQQwjht"}
+2019-07-22 18:47:25 ---- HTTP SERVER Data:{"USER":"apache","HOME":"\/usr\/share\/httpd","HTTP_COOKIE":"isHostDate=18099; isOsSysDate=18099; PTTuserFirstTime=1563753600000; PTTosSysFirstTime=1563753600000; pgv_info=ssid=s1051687360; pgv_pvid=9464189260; ts_uid=1884377883; PTTrouteLine=a20180718btkhy; weekloop=0-0-0-30; eas_sid=Y1d5t6Z3e7J842Q4l2d42536m9; ulink_pvid=kmthPhQJGLtuHiHLWHNdYHZeZmpXMkDHX1ua5l8z5aQQwjht","HTTP_ACCEPT_LANGUAGE":"zh-CN,zh;q=0.9","HTTP_ACCEPT_ENCODING":"gzip, deflate","HTTP_REFERER":"http:\/\/test.qq.com\/","HTTP_ACCEPT":"*\/*","HTTP_CONTENT_TYPE":"multipart\/form-data; boundary=----WebKitFormBoundaryZONRWH6bBhaaot55","HTTP_USER_AGENT":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/75.0.3770.142 Safari\/537.36","HTTP_ORIGIN":"http:\/\/test.qq.com","HTTP_CONTENT_LENGTH":"44","HTTP_CONNECTION":"keep-alive","HTTP_HOST":"test.qq.com","REDIRECT_STATUS":"200","SERVER_NAME":"test.qq.com","SERVER_PORT":"80","SERVER_ADDR":"172.17.0.2","REMOTE_PORT":"44862","REMOTE_ADDR":"172.17.0.1","SERVER_SOFTWARE":"nginx\/1.16.0","GATEWAY_INTERFACE":"CGI\/1.1","REQUEST_SCHEME":"http","SERVER_PROTOCOL":"HTTP\/1.1","DOCUMENT_ROOT":"\/www\/tencent","DOCUMENT_URI":"\/App1281\/php\/index.php","REQUEST_URI":"\/App1281\/php\/?route=User\/init&iActId=1387&game=mt4&area=20951&duplicate=60130&boss=6013201","SCRIPT_NAME":"\/App1281\/php\/index.php","CONTENT_LENGTH":"44","CONTENT_TYPE":"multipart\/form-data; boundary=----WebKitFormBoundaryZONRWH6bBhaaot55","REQUEST_METHOD":"POST","QUERY_STRING":"route=User\/init&iActId=1387&game=mt4&area=20951&duplicate=60130&boss=6013201","SCRIPT_FILENAME":"\/www\/tencent\/App1281\/php\/index.php","FCGI_ROLE":"RESPONDER","PHP_SELF":"\/App1281\/php\/index.php","REQUEST_TIME_FLOAT":1563792445.093606,"REQUEST_TIME":1563792445}
+2019-07-22 18:47:25 ---- /www/tencent/App1281/php/Lib/Base/Function.php,92,HTTP_X_FORWARDED_FOR：NULL
+2019-07-22 18:47:25 ---- /www/tencent/App1281/php/Lib/Base/Function.php,93,HTTP_CLIENT_IP：NULL
+2019-07-22 18:47:25 ---- /www/tencent/App1281/php/Lib/Base/Function.php,94,REMOTE_ADDR：'172.17.0.1'
+2019-07-22 18:47:25 ---- [/www/tencent/App1281/php/Lib/Base/RedisAction.php]instance='',redis_config=array (
+  'host' => '192.168.1.7',
+  'port' => 6379,
+  'password' => '',
+  'timeout' => '3',
+)
+2019-07-22 18:47:25 ---- Redis debug: func=get, argv: ["ulink_act_1387_accessLimit_User_init_172.17.0.1"] result: false
+2019-07-22 18:47:25 ---- Redis debug: func=incr, argv: ["ulink_act_1387_accessLimit_User_init_172.17.0.1"] result: 1
+2019-07-22 18:47:25 ---- Redis debug: func=expire, argv: ["ulink_act_1387_accessLimit_User_init_172.17.0.1",1] result: true
+2019-07-22 18:47:25 ---- /www/tencent/App1281/php/Lib/Base/Function.php,92,HTTP_X_FORWARDED_FOR：NULL
+2019-07-22 18:47:25 ---- /www/tencent/App1281/php/Lib/Base/Function.php,93,HTTP_CLIENT_IP：NULL
+2019-07-22 18:47:25 ---- /www/tencent/App1281/php/Lib/Base/Function.php,94,REMOTE_ADDR：'172.17.0.1'
+2019-07-22 18:47:25 ---- httpPost url: https://ulink.game.qq.com/paas/?game=mt4&iActId=1387&sApiName=gameattr.sdatamore&sAppId=ULINK-GHGAME-828541&sVersion=1.0&timestamp=1563792445&sSign=6C1E0C083AA561F5539351E48113FBFD&acctype=&dmId=2856&sAmsSerial=AMS-MT4-0722184725-TMekSS-155589-438231&ulenv=test&sUserIP=172.17.0.1
+2019-07-22 18:47:25 ---- httpPost postData: "api\/pkg_rules\/result?rbk_id=2856&secret=71e8671bfd51a4afd9ad5fc0f2eeb0ee&dtstatdate=20190722&izoneareaid=20951&duplicatetableid=60130&process=6013201"
+2019-07-22 18:47:25 ---- httpPost result: {"ret":-10008,"msg":"sCode\u53c2\u6570\u89e3\u5bc6\u5f02\u5e38","errNo":222,"sSerial":"ULINK-MT4-0722184725-TMekSS-155589-438231"}
+2019-07-22 18:47:25 ---- /www/tencent/App1281/php/Lib/Base/Function.php,233,output data(before filterHtml):array (
+  'iRet' => 
+  array (
+    'ret' => -10008,
+    'msg' => 'sCode参数解密异常',
+    'errNo' => 222,
+    'sSerial' => 'ULINK-MT4-0722184725-TMekSS-155589-438231',
+  ),
+  'sMsg' => 'ok',
+  'jData' => 
+  array (
+  ),
+  'sSerial' => 'AMS-MT4-0722184725-TMekSS-155589-438231',
+)
+2019-07-22 18:47:25 ---- /www/tencent/App1281/php/Lib/Base/Function.php,235,output data(after filterHtml):array (
+  'iRet' => 
+  array (
+    'ret' => -10008,
+    'msg' => 'sCode参数解密异常',
+    'errNo' => 222,
+    'sSerial' => 'ULINK-MT4-0722184725-TMekSS-155589-438231',
+  ),
+  'sMsg' => 'ok',
+  'jData' => 
+  array (
+  ),
+  'sSerial' => 'AMS-MT4-0722184725-TMekSS-155589-438231',
+)
+2019-07-22 18:47:56 ---- core_lib_version:1.8.14
+2019-07-22 18:47:56 ---- HTTP GET Data:{"route":"User\/init","iActId":"1387","game":"mt4","area":"20951","duplicate":"60130","boss":"6013201","sAmsSerial":"AMS-MT4-0722184756-4ajGbD-155589-833618"}
+2019-07-22 18:47:56 ---- HTTP POST Data:[]
+2019-07-22 18:47:56 ---- HTTP COOKIE Data:{"isHostDate":"18099","isOsSysDate":"18099","PTTuserFirstTime":"1563753600000","PTTosSysFirstTime":"1563753600000","pgv_info":"ssid=s1051687360","pgv_pvid":"9464189260","ts_uid":"1884377883","PTTrouteLine":"a20180718btkhy","weekloop":"0-0-0-30","eas_sid":"Y1d5t6Z3e7J842Q4l2d42536m9","ulink_pvid":"kmthPhQJGLtuHiHLWHNdYHZeZmpXMkDHX1ua5l8z5aQQwjht"}
+2019-07-22 18:47:56 ---- HTTP SERVER Data:{"USER":"apache","HOME":"\/usr\/share\/httpd","HTTP_COOKIE":"isHostDate=18099; isOsSysDate=18099; PTTuserFirstTime=1563753600000; PTTosSysFirstTime=1563753600000; pgv_info=ssid=s1051687360; pgv_pvid=9464189260; ts_uid=1884377883; PTTrouteLine=a20180718btkhy; weekloop=0-0-0-30; eas_sid=Y1d5t6Z3e7J842Q4l2d42536m9; ulink_pvid=kmthPhQJGLtuHiHLWHNdYHZeZmpXMkDHX1ua5l8z5aQQwjht","HTTP_ACCEPT_LANGUAGE":"zh-CN,zh;q=0.9","HTTP_ACCEPT_ENCODING":"gzip, deflate","HTTP_REFERER":"http:\/\/test.qq.com\/","HTTP_ACCEPT":"*\/*","HTTP_CONTENT_TYPE":"multipart\/form-data; boundary=----WebKitFormBoundary8MoEBkDsfkDzsAxv","HTTP_USER_AGENT":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/75.0.3770.142 Safari\/537.36","HTTP_ORIGIN":"http:\/\/test.qq.com","HTTP_CONTENT_LENGTH":"44","HTTP_CONNECTION":"keep-alive","HTTP_HOST":"test.qq.com","REDIRECT_STATUS":"200","SERVER_NAME":"test.qq.com","SERVER_PORT":"80","SERVER_ADDR":"172.17.0.2","REMOTE_PORT":"44862","REMOTE_ADDR":"172.17.0.1","SERVER_SOFTWARE":"nginx\/1.16.0","GATEWAY_INTERFACE":"CGI\/1.1","REQUEST_SCHEME":"http","SERVER_PROTOCOL":"HTTP\/1.1","DOCUMENT_ROOT":"\/www\/tencent","DOCUMENT_URI":"\/App1281\/php\/index.php","REQUEST_URI":"\/App1281\/php\/?route=User\/init&iActId=1387&game=mt4&area=20951&duplicate=60130&boss=6013201","SCRIPT_NAME":"\/App1281\/php\/index.php","CONTENT_LENGTH":"44","CONTENT_TYPE":"multipart\/form-data; boundary=----WebKitFormBoundary8MoEBkDsfkDzsAxv","REQUEST_METHOD":"POST","QUERY_STRING":"route=User\/init&iActId=1387&game=mt4&area=20951&duplicate=60130&boss=6013201","SCRIPT_FILENAME":"\/www\/tencent\/App1281\/php\/index.php","FCGI_ROLE":"RESPONDER","PHP_SELF":"\/App1281\/php\/index.php","REQUEST_TIME_FLOAT":1563792476.8389821,"REQUEST_TIME":1563792476}
+2019-07-22 18:47:56 ---- /www/tencent/App1281/php/Lib/Base/Function.php,92,HTTP_X_FORWARDED_FOR：NULL
+2019-07-22 18:47:56 ---- /www/tencent/App1281/php/Lib/Base/Function.php,93,HTTP_CLIENT_IP：NULL
+2019-07-22 18:47:56 ---- /www/tencent/App1281/php/Lib/Base/Function.php,94,REMOTE_ADDR：'172.17.0.1'
+2019-07-22 18:47:56 ---- [/www/tencent/App1281/php/Lib/Base/RedisAction.php]instance='',redis_config=array (
+  'host' => '192.168.1.7',
+  'port' => 6379,
+  'password' => '',
+  'timeout' => '3',
+)
+2019-07-22 18:47:56 ---- Redis debug: func=get, argv: ["ulink_act_1387_accessLimit_User_init_172.17.0.1"] result: false
+2019-07-22 18:47:56 ---- Redis debug: func=incr, argv: ["ulink_act_1387_accessLimit_User_init_172.17.0.1"] result: 1
+2019-07-22 18:47:56 ---- Redis debug: func=expire, argv: ["ulink_act_1387_accessLimit_User_init_172.17.0.1",1] result: true
+2019-07-22 18:47:56 ---- /www/tencent/App1281/php/Lib/Base/Function.php,92,HTTP_X_FORWARDED_FOR：NULL
+2019-07-22 18:47:56 ---- /www/tencent/App1281/php/Lib/Base/Function.php,93,HTTP_CLIENT_IP：NULL
+2019-07-22 18:47:56 ---- /www/tencent/App1281/php/Lib/Base/Function.php,94,REMOTE_ADDR：'172.17.0.1'
+2019-07-22 18:47:56 ---- httpPost url: https://ulink.game.qq.com/paas/?game=mt4&iActId=1387&sApiName=gameattr.sdatamore&sAppId=ULINK-GHGAME-828541&sVersion=1.0&timestamp=1563792476&sSign=A8175AFBDCAA606BB20E0AD35529CDA7&acctype=&dmId=2856&sAmsSerial=AMS-MT4-0722184756-4ajGbD-155589-833618&ulenv=test&sUserIP=172.17.0.1
+2019-07-22 18:47:56 ---- httpPost postData: "\/api\/pkg_rules\/result?rbk_id=2856&secret=71e8671bfd51a4afd9ad5fc0f2eeb0ee&dtstatdate=20190722&izoneareaid=20951&duplicatetableid=60130&process=6013201"
+2019-07-22 18:47:57 ---- httpPost result: {"ret":-10008,"msg":"sCode\u53c2\u6570\u89e3\u5bc6\u5f02\u5e38","errNo":222,"sSerial":"ULINK-MT4-0722184756-4ajGbD-155589-833618"}
+2019-07-22 18:47:57 ---- /www/tencent/App1281/php/Lib/Base/Function.php,233,output data(before filterHtml):array (
+  'iRet' => 
+  array (
+    'ret' => -10008,
+    'msg' => 'sCode参数解密异常',
+    'errNo' => 222,
+    'sSerial' => 'ULINK-MT4-0722184756-4ajGbD-155589-833618',
+  ),
+  'sMsg' => 'ok',
+  'jData' => 
+  array (
+  ),
+  'sSerial' => 'AMS-MT4-0722184756-4ajGbD-155589-833618',
+)
+2019-07-22 18:47:57 ---- /www/tencent/App1281/php/Lib/Base/Function.php,235,output data(after filterHtml):array (
+  'iRet' => 
+  array (
+    'ret' => -10008,
+    'msg' => 'sCode参数解密异常',
+    'errNo' => 222,
+    'sSerial' => 'ULINK-MT4-0722184756-4ajGbD-155589-833618',
+  ),
+  'sMsg' => 'ok',
+  'jData' => 
+  array (
+  ),
+  'sSerial' => 'AMS-MT4-0722184756-4ajGbD-155589-833618',
+)
+2019-07-22 19:23:46 ---- core_lib_version:1.8.14
+2019-07-22 19:23:46 ---- HTTP GET Data:{"route":"User\/initNoLogin","iActId":"1387","game":"mt4","area":"20951","duplicate":"60130","boss":"6013201","sAmsSerial":"AMS-MT4-0722192346-g9XPjV-155589-676468"}
+2019-07-22 19:23:46 ---- HTTP POST Data:[]
+2019-07-22 19:23:46 ---- HTTP COOKIE Data:{"isHostDate":"18099","isOsSysDate":"18099","PTTuserFirstTime":"1563753600000","PTTosSysFirstTime":"1563753600000","pgv_info":"ssid=s1051687360","pgv_pvid":"9464189260","ts_uid":"1884377883","PTTrouteLine":"a20180718btkhy","weekloop":"0-0-0-30","eas_sid":"Y1d5t6Z3e7J842Q4l2d42536m9","ulink_pvid":"kmthPhQJGLtuHiHLWHNdYHZeZmpXMkDHX1ua5l8z5aQQwjht","openid":"ogwpt1ch2scXEwfoqVyqIxpN29hA","access_token":"23_wi4lQ3-WOdELSS030F5I5P7QeRQwnv8I6gaWlLdiE0uurMDJjaG2mbtMB1kL-giszgF4hzhoKONwsQ3OH1PiEpGcdpu60Yr1fx4L4B0oAVs","acctype":"wx","appid":"wxd0cb4119210d6137","IED_LOG_INFO2":"openid=ogwpt1ch2scXEwfoqVyqIxpN29hA&loginType=wx"}
+2019-07-22 19:23:46 ---- HTTP SERVER Data:{"USER":"apache","HOME":"\/usr\/share\/httpd","HTTP_COOKIE":"isHostDate=18099; isOsSysDate=18099; PTTuserFirstTime=1563753600000; PTTosSysFirstTime=1563753600000; pgv_info=ssid=s1051687360; pgv_pvid=9464189260; ts_uid=1884377883; PTTrouteLine=a20180718btkhy; weekloop=0-0-0-30; eas_sid=Y1d5t6Z3e7J842Q4l2d42536m9; ulink_pvid=kmthPhQJGLtuHiHLWHNdYHZeZmpXMkDHX1ua5l8z5aQQwjht; openid=ogwpt1ch2scXEwfoqVyqIxpN29hA; access_token=23_wi4lQ3-WOdELSS030F5I5P7QeRQwnv8I6gaWlLdiE0uurMDJjaG2mbtMB1kL-giszgF4hzhoKONwsQ3OH1PiEpGcdpu60Yr1fx4L4B0oAVs; acctype=wx; appid=wxd0cb4119210d6137; IED_LOG_INFO2=openid%3Dogwpt1ch2scXEwfoqVyqIxpN29hA%26loginType%3Dwx","HTTP_ACCEPT_LANGUAGE":"zh-CN,zh;q=0.9","HTTP_ACCEPT_ENCODING":"gzip, deflate","HTTP_REFERER":"http:\/\/test.qq.com\/","HTTP_ACCEPT":"*\/*","HTTP_CONTENT_TYPE":"multipart\/form-data; boundary=----WebKitFormBoundaryIyBK9oTjpr9K7qxi","HTTP_USER_AGENT":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/75.0.3770.142 Safari\/537.36","HTTP_ORIGIN":"http:\/\/test.qq.com","HTTP_CONTENT_LENGTH":"44","HTTP_CONNECTION":"keep-alive","HTTP_HOST":"test.qq.com","REDIRECT_STATUS":"200","SERVER_NAME":"test.qq.com","SERVER_PORT":"80","SERVER_ADDR":"172.17.0.2","REMOTE_PORT":"44880","REMOTE_ADDR":"172.17.0.1","SERVER_SOFTWARE":"nginx\/1.16.0","GATEWAY_INTERFACE":"CGI\/1.1","REQUEST_SCHEME":"http","SERVER_PROTOCOL":"HTTP\/1.1","DOCUMENT_ROOT":"\/www\/tencent","DOCUMENT_URI":"\/App1281\/php\/index.php","REQUEST_URI":"\/App1281\/php\/?route=User\/initNoLogin&iActId=1387&game=mt4&area=20951&duplicate=60130&boss=6013201","SCRIPT_NAME":"\/App1281\/php\/index.php","CONTENT_LENGTH":"44","CONTENT_TYPE":"multipart\/form-data; boundary=----WebKitFormBoundaryIyBK9oTjpr9K7qxi","REQUEST_METHOD":"POST","QUERY_STRING":"route=User\/initNoLogin&iActId=1387&game=mt4&area=20951&duplicate=60130&boss=6013201","SCRIPT_FILENAME":"\/www\/tencent\/App1281\/php\/index.php","FCGI_ROLE":"RESPONDER","PHP_SELF":"\/App1281\/php\/index.php","REQUEST_TIME_FLOAT":1563794626.5872099,"REQUEST_TIME":1563794626}
+2019-07-22 19:23:46 ---- /www/tencent/App1281/php/Lib/Base/Function.php,92,HTTP_X_FORWARDED_FOR：NULL
+2019-07-22 19:23:46 ---- /www/tencent/App1281/php/Lib/Base/Function.php,93,HTTP_CLIENT_IP：NULL
+2019-07-22 19:23:46 ---- /www/tencent/App1281/php/Lib/Base/Function.php,94,REMOTE_ADDR：'172.17.0.1'
+2019-07-22 19:23:46 ---- [/www/tencent/App1281/php/Lib/Base/RedisAction.php]instance='',redis_config=array (
+  'host' => '192.168.1.7',
+  'port' => 6379,
+  'password' => '',
+  'timeout' => '3',
+)
+2019-07-22 19:23:46 ---- Redis debug: func=get, argv: ["ulink_act_1387_accessLimit_User_initNoLogin_172.17.0.1"] result: false
+2019-07-22 19:23:46 ---- Redis debug: func=incr, argv: ["ulink_act_1387_accessLimit_User_initNoLogin_172.17.0.1"] result: 1
+2019-07-22 19:23:46 ---- Redis debug: func=expire, argv: ["ulink_act_1387_accessLimit_User_initNoLogin_172.17.0.1",1] result: true
+2019-07-22 19:23:46 ---- /www/tencent/App1281/php/Lib/Paas/Login.php,63,access_token_Data={"access_token":"23_wi4lQ3-WOdELSS030F5I5P7QeRQwnv8I6gaWlLdiE0uurMDJjaG2mbtMB1kL-giszgF4hzhoKONwsQ3OH1PiEpGcdpu60Yr1fx4L4B0oAVs","appid":"wxd0cb4119210d6137","openid":"ogwpt1ch2scXEwfoqVyqIxpN29hA"}
+2019-07-22 19:23:46 ---- /www/tencent/App1281/php/Lib/Base/Function.php,92,HTTP_X_FORWARDED_FOR：NULL
+2019-07-22 19:23:46 ---- /www/tencent/App1281/php/Lib/Base/Function.php,93,HTTP_CLIENT_IP：NULL
+2019-07-22 19:23:46 ---- /www/tencent/App1281/php/Lib/Base/Function.php,94,REMOTE_ADDR：'172.17.0.1'
+2019-07-22 19:23:46 ---- httpPost url: https://ulink.game.qq.com/paas/?game=mt4&iActId=1387&sApiName=gameattr.sdatamore&sAppId=ULINK-GHGAME-828541&sVersion=1.0&timestamp=1563794626&sSign=1664033593423F302129D48B980F1E54&sCode=4X8iw%252BDsZo6pMHDSGuj2AV8f6CdqfsgvOu%252BFrebc5bFOkHgoyfpnziFfidSXo4a%252Fqi3xQhC2Oz8a%252Bq8L7YU0NWUtT3Oym6EGTsSYnvd6qHLQUJ51bsDQSc%252B4Pv1GQE%252FBfajXBfp2c5k5cXZEOll6dKM%252Bq7qo8tVb0%252BqdgLoJJEoSApNfswsyHcD3v%252FaF%252Fu%252BTIWW2slWWSsc%252B08yK9FMLrG62%252BYbTM0C9GHTHMdapTnXblJz8iTyW47he%252BEeJina2LgcJiu4j%252Fsm10MCuIwiGzg%253D%253D&acctype=wx&dmId=2856&sAmsSerial=AMS-MT4-0722192346-g9XPjV-155589-676468&ulenv=test&sUserIP=172.17.0.1
+2019-07-22 19:23:46 ---- httpPost postData: "\/api\/pkg_rules\/result?rbk_id=2856&secret=71e8671bfd51a4afd9ad5fc0f2eeb0ee&dtstatdate=20190722&izoneareaid=20951&duplicatetableid=60130&process=6013201"
+2019-07-22 19:23:52 ---- httpPost result: {"ret":-10026,"msg":"\u975e\u767d\u540d\u5355\u7528\u6237","errNo":247,"sSerial":"ULINK-MT4-0722192346-g9XPjV-155589-676468"}
+2019-07-22 19:23:52 ---- /www/tencent/App1281/php/Lib/Base/Function.php,233,output data(before filterHtml):array (
+  'iRet' => 
+  array (
+    'ret' => -10026,
+    'msg' => '非白名单用户',
+    'errNo' => 247,
+    'sSerial' => 'ULINK-MT4-0722192346-g9XPjV-155589-676468',
+  ),
+  'sMsg' => 'ok',
+  'jData' => 
+  array (
+  ),
+  'sSerial' => 'AMS-MT4-0722192346-g9XPjV-155589-676468',
+)
+2019-07-22 19:23:52 ---- /www/tencent/App1281/php/Lib/Base/Function.php,235,output data(after filterHtml):array (
+  'iRet' => 
+  array (
+    'ret' => -10026,
+    'msg' => '非白名单用户',
+    'errNo' => 247,
+    'sSerial' => 'ULINK-MT4-0722192346-g9XPjV-155589-676468',
+  ),
+  'sMsg' => 'ok',
+  'jData' => 
+  array (
+  ),
+  'sSerial' => 'AMS-MT4-0722192346-g9XPjV-155589-676468',
+)
+2019-07-22 19:24:40 ---- core_lib_version:1.8.14
+2019-07-22 19:24:40 ---- HTTP GET Data:{"route":"User\/initNoLogin","iActId":"1387","game":"mt4","area":"20951","duplicate":"60130","boss":"6013201","sAmsSerial":"AMS-MT4-0722192440-Ww87bB-155589-631833"}
+2019-07-22 19:24:40 ---- HTTP POST Data:[]
+2019-07-22 19:24:40 ---- HTTP COOKIE Data:[]
+2019-07-22 19:24:40 ---- HTTP SERVER Data:{"USER":"apache","HOME":"\/usr\/share\/httpd","HTTP_ACCEPT_LANGUAGE":"zh-CN,zh;q=0.9","HTTP_ACCEPT_ENCODING":"gzip, deflate","HTTP_REFERER":"http:\/\/test.qq.com\/","HTTP_ACCEPT":"*\/*","HTTP_CONTENT_TYPE":"multipart\/form-data; boundary=----WebKitFormBoundaryAosoIYvQMdNBzObi","HTTP_USER_AGENT":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/75.0.3770.142 Safari\/537.36","HTTP_ORIGIN":"http:\/\/test.qq.com","HTTP_CONTENT_LENGTH":"44","HTTP_CONNECTION":"keep-alive","HTTP_HOST":"test.qq.com","REDIRECT_STATUS":"200","SERVER_NAME":"test.qq.com","SERVER_PORT":"80","SERVER_ADDR":"172.17.0.2","REMOTE_PORT":"44880","REMOTE_ADDR":"172.17.0.1","SERVER_SOFTWARE":"nginx\/1.16.0","GATEWAY_INTERFACE":"CGI\/1.1","REQUEST_SCHEME":"http","SERVER_PROTOCOL":"HTTP\/1.1","DOCUMENT_ROOT":"\/www\/tencent","DOCUMENT_URI":"\/App1281\/php\/index.php","REQUEST_URI":"\/App1281\/php\/?route=User\/initNoLogin&iActId=1387&game=mt4&area=20951&duplicate=60130&boss=6013201","SCRIPT_NAME":"\/App1281\/php\/index.php","CONTENT_LENGTH":"44","CONTENT_TYPE":"multipart\/form-data; boundary=----WebKitFormBoundaryAosoIYvQMdNBzObi","REQUEST_METHOD":"POST","QUERY_STRING":"route=User\/initNoLogin&iActId=1387&game=mt4&area=20951&duplicate=60130&boss=6013201","SCRIPT_FILENAME":"\/www\/tencent\/App1281\/php\/index.php","FCGI_ROLE":"RESPONDER","PHP_SELF":"\/App1281\/php\/index.php","REQUEST_TIME_FLOAT":1563794680.932647,"REQUEST_TIME":1563794680}
+2019-07-22 19:24:40 ---- /www/tencent/App1281/php/Lib/Base/Function.php,92,HTTP_X_FORWARDED_FOR：NULL
+2019-07-22 19:24:40 ---- /www/tencent/App1281/php/Lib/Base/Function.php,93,HTTP_CLIENT_IP：NULL
+2019-07-22 19:24:40 ---- /www/tencent/App1281/php/Lib/Base/Function.php,94,REMOTE_ADDR：'172.17.0.1'
+2019-07-22 19:24:40 ---- [/www/tencent/App1281/php/Lib/Base/RedisAction.php]instance='',redis_config=array (
+  'host' => '192.168.1.7',
+  'port' => 6379,
+  'password' => '',
+  'timeout' => '3',
+)
+2019-07-22 19:24:40 ---- Redis debug: func=get, argv: ["ulink_act_1387_accessLimit_User_initNoLogin_172.17.0.1"] result: false
+2019-07-22 19:24:40 ---- Redis debug: func=incr, argv: ["ulink_act_1387_accessLimit_User_initNoLogin_172.17.0.1"] result: 1
+2019-07-22 19:24:40 ---- Redis debug: func=expire, argv: ["ulink_act_1387_accessLimit_User_initNoLogin_172.17.0.1",1] result: true
+2019-07-22 19:24:40 ---- /www/tencent/App1281/php/Lib/Base/Function.php,92,HTTP_X_FORWARDED_FOR：NULL
+2019-07-22 19:24:40 ---- /www/tencent/App1281/php/Lib/Base/Function.php,93,HTTP_CLIENT_IP：NULL
+2019-07-22 19:24:40 ---- /www/tencent/App1281/php/Lib/Base/Function.php,94,REMOTE_ADDR：'172.17.0.1'
+2019-07-22 19:24:40 ---- httpPost url: https://ulink.game.qq.com/paas/?game=mt4&iActId=1387&sApiName=gameattr.sdatamore&sAppId=ULINK-GHGAME-828541&sVersion=1.0&timestamp=1563794680&sSign=C65D3F699D06AA6056D35F4B09B2E99C&acctype=&dmId=2856&sAmsSerial=AMS-MT4-0722192440-Ww87bB-155589-631833&ulenv=test&sUserIP=172.17.0.1
+2019-07-22 19:24:40 ---- httpPost postData: "\/api\/pkg_rules\/result?rbk_id=2856&secret=71e8671bfd51a4afd9ad5fc0f2eeb0ee&dtstatdate=20190722&izoneareaid=20951&duplicatetableid=60130&process=6013201"
+2019-07-22 19:24:41 ---- httpPost result: {"ret":-10008,"msg":"sCode\u53c2\u6570\u89e3\u5bc6\u5f02\u5e38","errNo":222,"sSerial":"ULINK-MT4-0722192440-Ww87bB-155589-631833"}
+2019-07-22 19:24:41 ---- /www/tencent/App1281/php/Lib/Base/Function.php,233,output data(before filterHtml):array (
+  'iRet' => 
+  array (
+    'ret' => -10008,
+    'msg' => 'sCode参数解密异常',
+    'errNo' => 222,
+    'sSerial' => 'ULINK-MT4-0722192440-Ww87bB-155589-631833',
+  ),
+  'sMsg' => 'ok',
+  'jData' => 
+  array (
+  ),
+  'sSerial' => 'AMS-MT4-0722192440-Ww87bB-155589-631833',
+)
+2019-07-22 19:24:41 ---- /www/tencent/App1281/php/Lib/Base/Function.php,235,output data(after filterHtml):array (
+  'iRet' => 
+  array (
+    'ret' => -10008,
+    'msg' => 'sCode参数解密异常',
+    'errNo' => 222,
+    'sSerial' => 'ULINK-MT4-0722192440-Ww87bB-155589-631833',
+  ),
+  'sMsg' => 'ok',
+  'jData' => 
+  array (
+  ),
+  'sSerial' => 'AMS-MT4-0722192440-Ww87bB-155589-631833',
+)
+2019-07-22 20:03:58 ---- core_lib_version:1.8.14
+2019-07-22 20:03:58 ---- HTTP GET Data:{"route":"User\/initNoLogin","iActId":"1387","game":"mt4","area":"20951","duplicate":"60130","boss":"6013201","sAmsSerial":"AMS-MT4-0722200358-vGDhGA-155589-573900"}
+2019-07-22 20:03:58 ---- HTTP POST Data:[]
+2019-07-22 20:03:58 ---- HTTP COOKIE Data:{"ulink_pvid":"w6mCa8czwAs6HlKIrMY1TtNUgzXXsyKfJqwDQQLgogIrAHgM"}
+2019-07-22 20:03:58 ---- HTTP SERVER Data:{"USER":"apache","HOME":"\/usr\/share\/httpd","HTTP_COOKIE":"ulink_pvid=w6mCa8czwAs6HlKIrMY1TtNUgzXXsyKfJqwDQQLgogIrAHgM","HTTP_ACCEPT_LANGUAGE":"zh-CN,zh;q=0.9","HTTP_ACCEPT_ENCODING":"gzip, deflate","HTTP_REFERER":"http:\/\/test.qq.com\/","HTTP_ACCEPT":"*\/*","HTTP_CONTENT_TYPE":"multipart\/form-data; boundary=----WebKitFormBoundaryVms7O7WrmVWrCKAt","HTTP_USER_AGENT":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/75.0.3770.142 Safari\/537.36","HTTP_ORIGIN":"http:\/\/test.qq.com","HTTP_CONTENT_LENGTH":"44","HTTP_CONNECTION":"keep-alive","HTTP_HOST":"test.qq.com","REDIRECT_STATUS":"200","SERVER_NAME":"test.qq.com","SERVER_PORT":"80","SERVER_ADDR":"172.17.0.2","REMOTE_PORT":"44896","REMOTE_ADDR":"172.17.0.1","SERVER_SOFTWARE":"nginx\/1.16.0","GATEWAY_INTERFACE":"CGI\/1.1","REQUEST_SCHEME":"http","SERVER_PROTOCOL":"HTTP\/1.1","DOCUMENT_ROOT":"\/www\/tencent","DOCUMENT_URI":"\/App1281\/php\/index.php","REQUEST_URI":"\/App1281\/php\/?route=User\/initNoLogin&iActId=1387&game=mt4&area=20951&duplicate=60130&boss=6013201","SCRIPT_NAME":"\/App1281\/php\/index.php","CONTENT_LENGTH":"44","CONTENT_TYPE":"multipart\/form-data; boundary=----WebKitFormBoundaryVms7O7WrmVWrCKAt","REQUEST_METHOD":"POST","QUERY_STRING":"route=User\/initNoLogin&iActId=1387&game=mt4&area=20951&duplicate=60130&boss=6013201","SCRIPT_FILENAME":"\/www\/tencent\/App1281\/php\/index.php","FCGI_ROLE":"RESPONDER","PHP_SELF":"\/App1281\/php\/index.php","REQUEST_TIME_FLOAT":1563797038.2323389,"REQUEST_TIME":1563797038}
+2019-07-22 20:03:58 ---- /www/tencent/App1281/php/Lib/Base/Function.php,92,HTTP_X_FORWARDED_FOR：NULL
+2019-07-22 20:03:58 ---- /www/tencent/App1281/php/Lib/Base/Function.php,93,HTTP_CLIENT_IP：NULL
+2019-07-22 20:03:58 ---- /www/tencent/App1281/php/Lib/Base/Function.php,94,REMOTE_ADDR：'172.17.0.1'
+2019-07-22 20:03:58 ---- [/www/tencent/App1281/php/Lib/Base/RedisAction.php]instance='',redis_config=array (
+  'host' => '192.168.1.7',
+  'port' => 6379,
+  'password' => '',
+  'timeout' => '3',
+)
+2019-07-22 20:03:58 ---- Redis debug: func=get, argv: ["ulink_act_1387_accessLimit_User_initNoLogin_172.17.0.1"] result: false
+2019-07-22 20:03:58 ---- Redis debug: func=incr, argv: ["ulink_act_1387_accessLimit_User_initNoLogin_172.17.0.1"] result: 1
+2019-07-22 20:03:58 ---- Redis debug: func=expire, argv: ["ulink_act_1387_accessLimit_User_initNoLogin_172.17.0.1",1] result: true
+2019-07-22 20:03:58 ---- /www/tencent/App1281/php/Lib/Base/Function.php,92,HTTP_X_FORWARDED_FOR：NULL
+2019-07-22 20:03:58 ---- /www/tencent/App1281/php/Lib/Base/Function.php,93,HTTP_CLIENT_IP：NULL
+2019-07-22 20:03:58 ---- /www/tencent/App1281/php/Lib/Base/Function.php,94,REMOTE_ADDR：'172.17.0.1'
+2019-07-22 20:03:58 ---- httpPost url: https://ulink.game.qq.com/paas/?game=mt4&iActId=1387&sApiName=custom.1030&sAppId=ULINK-GHGAME-828541&sVersion=1.0&timestamp=1563797038&sSign=677FC649E6F7C1D81BCEA897921E4213&sAmsSerial=AMS-MT4-0722200358-vGDhGA-155589-573900&ulenv=test&sUserIP=172.17.0.1
+2019-07-22 20:03:58 ---- httpPost postData: "dtstatdate=1563797038&izoneareaid=20951&duplicatetableid=60130&process=6013201"
+2019-07-22 20:03:58 ---- httpPost result: {"ret":0,"msg":"success","errNo":0,"data":{"error_code":0,"error_message":"","result":{"data":[],"fixed":{"dtstatdate":"1563797038","duplicatetableid":"60130","izoneareaid":"20951","process":"6013201","rbk_id":"2856","secret":"71e8671bfd51a4afd9ad5fc0f2eeb0ee"},"realtime":[],"rules":[]}},"sSerial":"ULINK-MT4-0722200358-vGDhGA-155589-573900"}
+2019-07-22 20:03:58 ---- /www/tencent/App1281/php/Lib/Base/Function.php,233,output data(before filterHtml):array (
+  'iRet' => 
+  array (
+    'ret' => 0,
+    'msg' => 'success',
+    'errNo' => 0,
+    'data' => 
+    array (
+      'error_code' => 0,
+      'error_message' => '',
+      'result' => 
+      array (
+        'data' => 
+        array (
+        ),
+        'fixed' => 
+        array (
+          'dtstatdate' => '1563797038',
+          'duplicatetableid' => '60130',
+          'izoneareaid' => '20951',
+          'process' => '6013201',
+          'rbk_id' => '2856',
+          'secret' => '71e8671bfd51a4afd9ad5fc0f2eeb0ee',
+        ),
+        'realtime' => 
+        array (
+        ),
+        'rules' => 
+        array (
+        ),
+      ),
+    ),
+    'sSerial' => 'ULINK-MT4-0722200358-vGDhGA-155589-573900',
+  ),
+  'sMsg' => 'ok',
+  'jData' => 
+  array (
+  ),
+  'sSerial' => 'AMS-MT4-0722200358-vGDhGA-155589-573900',
+)
+2019-07-22 20:03:58 ---- /www/tencent/App1281/php/Lib/Base/Function.php,235,output data(after filterHtml):array (
+  'iRet' => 
+  array (
+    'ret' => 0,
+    'msg' => 'success',
+    'errNo' => 0,
+    'data' => 
+    array (
+      'error_code' => 0,
+      'error_message' => '',
+      'result' => 
+      array (
+        'data' => 
+        array (
+        ),
+        'fixed' => 
+        array (
+          'dtstatdate' => '1563797038',
+          'duplicatetableid' => '60130',
+          'izoneareaid' => '20951',
+          'process' => '6013201',
+          'rbk_id' => '2856',
+          'secret' => '71e8671bfd51a4afd9ad5fc0f2eeb0ee',
+        ),
+        'realtime' => 
+        array (
+        ),
+        'rules' => 
+        array (
+        ),
+      ),
+    ),
+    'sSerial' => 'ULINK-MT4-0722200358-vGDhGA-155589-573900',
+  ),
+  'sMsg' => 'ok',
+  'jData' => 
+  array (
+  ),
+  'sSerial' => 'AMS-MT4-0722200358-vGDhGA-155589-573900',
+)

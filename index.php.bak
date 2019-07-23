@@ -1,0 +1,188 @@
+<?php
+require "vendor/autoload.php";
+
+ini_set("display_errors", "On");
+
+error_reporting(E_ALL | E_STRICT);
+/*$a = md5(md5('123456'));
+dd($a);
+dd(md5($a.'gGz9TUd3'));
+$obj = new \App\Pay\Demo(new \App\Pay\Wetch());
+
+$obj->transfer();
+echo 'sdfasdfsadf';*/
+
+/*$a['dd'] = 0;
+if(isset($a['dd'])){
+    dd(1);
+
+
+}*/
+//dd('hello jenkins!!!');
+
+
+/*$sum = 0;
+srand(microtime(true));
+
+$rand = rand(10,13);
+
+echo $rand;
+
+echo '</br>';
+
+$t = microtime(true);
+
+for ($i = 0; $i<40000+$r;$i++){
+    for ($j=0;$j<=40000;$j++){
+        $sum = $sum+$i+$j;
+    }
+}
+
+echo $sum;
+
+echo '</br>';
+
+$end = microtime(true);
+
+
+
+echo $end-$t;*/
+
+
+/*function fib($n)
+{
+    $result = [0, 1];
+    if ($n < 2) {
+        return $result[$n];
+    }
+    $result = [0, 1];
+    for ($i = 2; $i <= $n; $i++) {
+        $result[] = $result[$i - 2] + $result[$i - 1];
+    }
+    return $result;
+}*/
+
+/*$stack = new \App\DataStructure\Queue();
+
+$stack->enqueue('dongjie1');
+$stack->enqueue('dongjie2');
+$stack->enqueue('dongjie3');
+$stack->enqueue('dongjie4');
+//dd($stack->size());
+
+$stack->dequeue();
+
+$stack->front();
+$stack->enqueue('dongjie5');
+dd($stack->getItems());*/
+
+//$doublyLinkedList = new \App\DataStructure\DoublyLinkedList();
+//
+//$doublyLinkedList->append(1);
+//$doublyLinkedList->append(2);
+//$doublyLinkedList->append(3);
+//$doublyLinkedList->append(4);
+//$doublyLinkedList->append(5);
+//$doublyLinkedList->append(6);
+//$dsn, $username = null, $passwd = null, $options = null
+/*
+$dsn = 'mysql:host=192.168.1.157;dbname=learn';
+$username = 'root';
+$password = '123456';
+$options = array(
+    PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',
+);
+
+$randStr = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
+$pdo = new PDO($dsn, $username, $password, $options);
+for ($a = 0; $a < 10; $a++) {
+    $sql = <<<eof
+INSERT INTO test(a,b,c,d) VALUES 
+eof;
+    $sql1 = '';
+    for ($i = 0; $i <= 100000; $i++) {
+        $sql1 .= ",('" . $randStr[rand(0, strlen($randStr) - 1)] . "'," . rand(1, 255) . "," . rand(1, 999999999) . "," . rand(1, 999999999) . ")";
+    }
+    $b = $sql . ltrim($sql1,',');
+    $pdo->query($b);
+}*/
+
+/*class user
+{
+    public $a = 1;
+    private static $count = 0;
+
+    public function __construct()
+    {
+        self::$count = self::$count + 1;
+    }
+
+    protected function getCount()
+    {
+        return self::$count;
+    }
+
+    public function __destruct()
+    {
+        self::$count = self::$count - 1;
+    }
+}
+
+class User1 extends User
+{
+    public  function test()
+    {
+        echo $this->getCount();
+    }
+}*/
+
+//echo User1::test();
+//echo "<br />";
+
+//echo User::getCount();
+interface B
+{
+    public function test();
+
+    public function test1();
+}
+
+abstract class A1 implements B
+{
+    public function test1()
+    {
+
+    }
+
+    abstract function test();
+}
+
+interface A extends B
+{
+
+}
+
+class B1 extends A1
+{
+    public function test()
+    {
+        // TODO: Implement test() method.
+    }
+}
+
+class B2 implements B
+{
+    public function test()
+    {
+        // TODO: Implement test() method.
+    }
+
+    public function test1()
+    {
+        // TODO: Implement test1() method.
+    }
+}
+
+
+
+

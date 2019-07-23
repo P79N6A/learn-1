@@ -1,5 +1,3 @@
-FROM centos
+FROM scratch
 
-RUN yum -y update
-
-COPY testfile /usr
+exec cmd 'hello docker'

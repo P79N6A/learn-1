@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="sendRequest()">发起请求</button>
+</body>
+<script type="text/javascript" src="//ulink.qq.com/ulinksdk/dist/js/ulink.1.0.14.js"></script>
+<script>
+    var alertMsg = function (msg) {
+        ulink.Dialog.alert(msg, function () {
+        });
+    };
+    var dd = function (msg) {
+        console.log(msg)
+    };
+</script>
+
+<script>
+    var $ = ulink.$;
+    var baseUrl = '//activity.qq.com/App1266/php/';
+    var actId = 1359;
+    var game = 'mt4';
+
+
+    var options = {
+        'iActId': actId,
+        'game': game,
+    };
+
+    var LoginManager = ulink.LoginManager;
+
+    var init = function () {
+        //检查登录情况
+        LoginManager.checkLogin(function (userInfo) {
+            console.log("登录信息：", userInfo);
+            isBind()
+        }, function () {
+            doLogin();
+        });
+    };
+
+    var doLogin = function () {
+        if (ulink.isQQApp()) {
+            qqLogin()
+        } else if (ulink.isWxApp()) {
+            wxLogin()
+        } else {
+            //弹出选择登录方式弹框
+            LoginManager.loginByWxAndQQ();
+        }
+    };
+
+    var wxLogin = function () {
+        LoginManager.loginByWx();
+    };
+
+    var qqLogin = function () {
+        LoginManager.login();
+    };
+
+    //检查用户是否绑定角色
+    var isBind = function () {
+        var url = baseUrl + '?route=User/init';
+        ulink.http.post({
+            url: url,
+            params: options,
+            success: function (res) {
+                console.log(res);
+                if (res.jData.sCode) {
+                    showRoleSelector(res)
+                } else if (res.iRet != '0') {
+                    return false
+                }
+            },
+            error: function () {
+            }
+        });
+    };
+
+    var showRoleSelector = function (res) {
+        //检查登录情况
+        LoginManager.checkLogin(function (userInfo) {
+            var roleSelectorOptions = {
+                "sAppId": "ULINK-GHGAME-828541",  //腾讯优联APPID
+                "iActId": actId,   //活动ID
+                "sSign": res.jData.sSign,  //签名
+                "game": game,  //游戏id
+                "timestamp": res.jData.timestamp, //时间戳
+                "sCode": encodeURIComponent(res.jData.sCode),  //第三方渠道加密串
+                "filterChannels": [""],
+                "tips": {  // 自定义文案，1.0.13版本及后续版本支持
+                    "noGetRole": "未查询到角色",   // “未查询到角色”的提示文案
+                    "searchLater": "请稍后查询",     // “请稍后查询”的提示文案
+                }
+            };
+            console.log(roleSelectorOptions);
+            var roleselector = new ulink.RoleSelector(roleSelectorOptions);
+            roleselector.show();
+            //获取用户选中
+            roleselector.on("getRoleData", function (data) {
+                console.log(data);
+                //绑定角色
+                bindRole(data)
+            });
+        }, function () {
+            doLogin();
+        });
+    };
+
+    //绑定角色
+    var bindRole = function (data) {
+        var url = baseUrl + '?route=User/init';
+
+        options.area = data.area;
+        options.platId = data.platId;
+        options.partition = data.partition;
+        options.roleId = data.roleId;
+        //options.roleName = data.roleName;
+        dd(options);
+        ulink.http.post({
+            url: url,
+            params: options,
+            success: function (res) {
+                if (res.iRet != '0') {
+                    //alertMsg(res.sMsg);
+                    return false
+                }
+                alertMsg(res.sMsg);
+
+            },
+            error: function () {
+            }
+        });
+    };
+
+    init();
+
+    sendRequest = function () {
+        //var url = baseUrl + '?route=User/call';
+        // var url = baseUrl + '?route=User/getCallRecord';
+        var url = baseUrl + '?route=User/shareCallback';
+        //var url = baseUrl + '?route=User/getCallQual';
+        //options.ugcid = '109015390_1559993108_892';
+        //options.type = 2;
+        options.page = 1;
+        ulink.http.post({
+            url: url,
+            params: options,
+            success: function (res) {
+                //alertMsg(res.sMsg);
+            },
+            error: function () {
+            }
+        });
+    }
+</script>
+</html>
